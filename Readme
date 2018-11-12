@@ -1,13 +1,15 @@
 Ans bank competition
 use catboost
 parameter：
-    'iterations': 800,
+    'iterations': 320,
     'learning_rate': 0.15,
     'eval_metric': 'AUC',
     'random_seed': 42,
     'logging_level': 'Silent',
     'use_best_model': True,
+    'one_hot_max_size':20,
     'depth':10,
     'l2_leaf_reg':9
-valid:0.8068
-test:0.59
+valid_auc:0.8068
+test_auc：0.7831
+test_accuary:0.9042
